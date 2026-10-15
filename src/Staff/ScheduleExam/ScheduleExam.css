@@ -1,0 +1,237 @@
+.schedule-exam-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* ==============================
+   PAGE HEADER
+============================== */
+
+.schedule-page-header {
+  margin-bottom: 30px;
+}
+
+.schedule-page-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #17233a;
+}
+
+.schedule-page-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ==============================
+   FORM
+============================== */
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+/* ==============================
+   SECTION
+============================== */
+
+.schedule-section {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.schedule-section h3 {
+  margin: 0 0 8px;
+  color: #17233a;
+  font-size: 18px;
+}
+
+.schedule-description {
+  margin: 0 0 22px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   FORM GROUP
+============================== */
+
+.schedule-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.schedule-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+
+/* ==============================
+   INPUTS
+============================== */
+
+.schedule-form-group input,
+.schedule-form-group select,
+.schedule-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #334155;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.2s;
+}
+
+.schedule-form-group input:focus,
+.schedule-form-group select:focus,
+.schedule-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.schedule-form-group textarea {
+  resize: vertical;
+}
+
+
+/* ==============================
+   FORM GRID
+============================== */
+
+.schedule-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+/* ==============================
+   SUMMARY
+============================== */
+
+.schedule-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+}
+
+.summary-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.schedule-summary strong {
+  display: block;
+  color: #1e40af;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.schedule-summary p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   ACTION BUTTONS
+============================== */
+
+.schedule-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding-bottom: 30px;
+}
+
+.schedule-draft-button,
+.schedule-button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+/* DRAFT */
+
+.schedule-draft-button {
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #475569;
+}
+
+.schedule-draft-button:hover {
+  background: #f8fafc;
+}
+
+
+/* SCHEDULE */
+
+.schedule-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+}
+
+.schedule-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+  .schedule-section {
+    padding: 20px;
+  }
+
+  .schedule-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-actions {
+    flex-direction: column;
+  }
+
+  .schedule-draft-button,
+  .schedule-button {
+    width: 100%;
+  }
+}

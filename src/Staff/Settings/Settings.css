@@ -1,0 +1,277 @@
+.settings-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* ==============================
+   PAGE HEADER
+============================== */
+
+.settings-header {
+  margin-bottom: 30px;
+}
+
+.settings-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #17233a;
+}
+
+.settings-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ==============================
+   FORM
+============================== */
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+/* ==============================
+   SECTION
+============================== */
+
+.settings-section {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ==============================
+   SECTION HEADER
+============================== */
+
+.settings-section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.settings-section-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 9px;
+  background: #e8f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.settings-section-header h3 {
+  margin: 0;
+  color: #17233a;
+  font-size: 18px;
+}
+
+.settings-section-header p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+/* ==============================
+   PROFILE GRID
+============================== */
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-field label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  color: #334155;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.settings-field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.settings-field input:disabled {
+  background: #f8fafc;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+
+/* ==============================
+   SETTINGS OPTIONS
+============================== */
+
+.settings-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.settings-option:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.settings-option:first-child {
+  padding-top: 0;
+}
+
+.settings-option strong {
+  display: block;
+  color: #334155;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.settings-option span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   CHECKBOX
+============================== */
+
+.settings-option input[type="checkbox"] {
+  width: 19px;
+  height: 19px;
+  accent-color: #2563eb;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+
+/* ==============================
+   SECURITY
+============================== */
+
+.security-placeholder {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+}
+
+.security-placeholder > span {
+  font-size: 20px;
+}
+
+.security-placeholder strong {
+  display: block;
+  color: #334155;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.security-placeholder p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   ACTIONS
+============================== */
+
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+}
+
+.save-settings-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-settings-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 700px) {
+
+  .settings-section {
+    padding: 20px;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-option {
+    align-items: flex-start;
+  }
+
+  .settings-actions {
+    width: 100%;
+  }
+
+  .save-settings-button {
+    width: 100%;
+  }
+}

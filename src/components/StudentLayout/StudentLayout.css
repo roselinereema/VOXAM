@@ -1,0 +1,332 @@
+/* ==============================
+   STUDENT LAYOUT
+============================== */
+
+.student-layout {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.student-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 260px;
+  height: 100vh;
+
+  background: white;
+  border-right: 1px solid #e2e8f0;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 100;
+}
+
+
+/* ==============================
+   SIDEBAR LOGO
+============================== */
+
+.student-sidebar-logo {
+  height: 75px;
+
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+.student-logo-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+
+.student-sidebar-logo h2 {
+  margin: 0;
+
+  font-size: 16px;
+
+  color: #17233a;
+}
+
+
+.student-sidebar-logo p {
+  margin: 3px 0 0;
+
+  font-size: 11px;
+
+  color: #64748b;
+}
+
+
+/* ==============================
+   SIDEBAR MENU
+============================== */
+
+.student-sidebar-menu {
+  padding: 20px 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.student-sidebar-link {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 12px 14px;
+
+  border-radius: 8px;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+
+.student-sidebar-link svg {
+  font-size: 16px;
+}
+
+
+.student-sidebar-link:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+
+.student-sidebar-link.active {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* ==============================
+   LOGOUT
+============================== */
+
+.student-logout-button {
+  margin: auto 12px 20px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  padding: 12px 14px;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+
+.student-logout-button:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+
+/* ==============================
+   MAIN SECTION
+============================== */
+
+.student-main-section {
+  margin-left: 260px;
+
+  min-height: 100vh;
+}
+
+
+/* ==============================
+   TOPBAR
+============================== */
+
+.student-topbar {
+  height: 75px;
+
+  background: white;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.student-topbar h1 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: #17233a;
+}
+
+
+.student-topbar p {
+  margin: 4px 0 0;
+
+  font-size: 12px;
+
+  color: #64748b;
+}
+
+
+/* ==============================
+   STUDENT PROFILE
+============================== */
+
+.student-profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.student-profile-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+
+.student-profile strong {
+  display: block;
+
+  font-size: 14px;
+
+  color: #17233a;
+}
+
+
+.student-profile span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 11px;
+
+  color: #64748b;
+}
+
+
+/* ==============================
+   PAGE CONTENT
+============================== */
+
+.student-page-content {
+  padding: 30px;
+
+  min-height: calc(100vh - 75px);
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 800px) {
+
+  .student-sidebar {
+    width: 220px;
+  }
+
+  .student-main-section {
+    margin-left: 220px;
+  }
+
+  .student-topbar {
+    padding: 0 20px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .student-sidebar {
+    width: 70px;
+  }
+
+  .student-sidebar-logo h2,
+  .student-sidebar-logo p,
+  .student-sidebar-link span,
+  .student-logout-button span {
+    display: none;
+  }
+
+  .student-sidebar-logo {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .student-sidebar-link,
+  .student-logout-button {
+    justify-content: center;
+  }
+
+  .student-main-section {
+    margin-left: 70px;
+  }
+
+  .student-profile div:last-child {
+    display: none;
+  }
+
+}

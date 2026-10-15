@@ -1,0 +1,455 @@
+.review-answers-page {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+
+/* ==============================
+   PAGE HEADER
+============================== */
+
+.review-header {
+  margin-bottom: 30px;
+}
+
+.review-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #17233a;
+}
+
+.review-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ==============================
+   SUBMISSIONS CARD
+============================== */
+
+.review-submissions-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.review-card-header {
+  padding: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.review-card-header h3 {
+  margin: 0;
+  color: #17233a;
+  font-size: 18px;
+}
+
+.review-card-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+/* ==============================
+   SUBMISSION LIST
+============================== */
+
+.submission-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.submission-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  border-bottom: 1px solid #e2e8f0;
+  transition: 0.2s;
+}
+
+.submission-item:last-child {
+  border-bottom: none;
+}
+
+.submission-item:hover {
+  background: #f8fafc;
+}
+
+.submission-item.selected {
+  background: #eff6ff;
+}
+
+
+/* ==============================
+   SUBMISSION ICON
+============================== */
+
+.submission-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 9px;
+  background: #e8f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+
+/* ==============================
+   SUBMISSION DETAILS
+============================== */
+
+.submission-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.submission-details strong {
+  color: #17233a;
+  font-size: 14px;
+}
+
+.submission-details span {
+  color: #475569;
+  font-size: 12px;
+}
+
+.submission-details small {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+
+/* ==============================
+   SUBMISSION FILE
+============================== */
+
+.submission-file {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.submission-file span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.submission-file button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submission-file button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ==============================
+   ANSWER REVIEW CARD
+============================== */
+
+.answer-review-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.answer-review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.answer-review-header h3 {
+  margin: 0;
+  color: #17233a;
+  font-size: 18px;
+}
+
+.answer-review-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.review-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ==============================
+   ANSWER PAPER
+============================== */
+
+.answer-paper {
+  padding: 25px;
+}
+
+.answer-paper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  margin-bottom: 25px;
+  background: #f8fafc;
+  border-radius: 9px;
+}
+
+.answer-paper-header h4 {
+  margin: 0;
+  color: #334155;
+  font-size: 15px;
+}
+
+.answer-paper-header p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.view-pdf-button {
+  padding: 9px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-pdf-button:hover {
+  background: #eff6ff;
+}
+
+
+/* ==============================
+   ANSWER QUESTION
+============================== */
+
+.answer-question {
+  padding: 25px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.answer-question:last-of-type {
+  border-bottom: none;
+}
+
+.answer-question-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.answer-question-top strong {
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.answer-question-top span {
+  padding: 5px 9px;
+  background: #f1f5f9;
+  color: #64748b;
+  border-radius: 5px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+
+/* ==============================
+   STUDENT ANSWER
+============================== */
+
+.student-answer {
+  margin-top: 18px;
+  padding: 18px;
+  background: #f8fafc;
+  border-left: 3px solid #2563eb;
+  border-radius: 5px;
+}
+
+.student-answer label {
+  display: block;
+  margin-bottom: 8px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.student-answer p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* ==============================
+   EVALUATION FIELDS
+============================== */
+
+.evaluation-fields {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.marks-field,
+.feedback-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.marks-field label,
+.feedback-field label {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.marks-field input,
+.feedback-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.marks-field input:focus,
+.feedback-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.feedback-field textarea {
+  resize: vertical;
+}
+
+
+/* ==============================
+   EVALUATION SUMMARY
+============================== */
+
+.evaluation-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 25px;
+  padding: 20px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+}
+
+.evaluation-summary strong {
+  display: block;
+  color: #1e40af;
+  font-size: 14px;
+}
+
+.evaluation-summary p {
+  margin: 5px 0 0;
+  color: #475569;
+  font-size: 12px;
+}
+
+.save-evaluation-button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.save-evaluation-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 900px) {
+
+  .submission-item {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .submission-details {
+    min-width: 200px;
+  }
+
+  .submission-file {
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  .answer-review-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .answer-question-top {
+    flex-direction: column;
+  }
+
+  .evaluation-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .evaluation-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .save-evaluation-button {
+    width: 100%;
+  }
+}

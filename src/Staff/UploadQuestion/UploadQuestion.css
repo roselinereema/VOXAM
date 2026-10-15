@@ -1,0 +1,246 @@
+.upload-question-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #17233a;
+}
+
+.page-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ==============================
+   FORM SECTION
+============================== */
+
+.form-section {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.form-section h3 {
+  margin: 0 0 20px;
+  color: #17233a;
+  font-size: 18px;
+}
+
+.section-description {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+
+/* ==============================
+   FORM GROUP
+============================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  color: #334155;
+  outline: none;
+}
+
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ==============================
+   UPLOAD BOX
+============================== */
+
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 45px 30px;
+  text-align: center;
+  background: #f8fafc;
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  border-color: #2563eb;
+  background: #f8faff;
+}
+
+.upload-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.upload-box h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #17233a;
+}
+
+.upload-box p {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ==============================
+   FILE BUTTON
+============================== */
+
+.file-button {
+  display: inline-block;
+  padding: 11px 20px;
+  background: #e8f0ff;
+  color: #2563eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.file-button:hover {
+  background: #dbe7ff;
+}
+
+.file-button input {
+  display: none;
+}
+
+
+/* ==============================
+   SELECTED FILE
+============================== */
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 5px auto 20px;
+  padding: 12px 15px;
+  max-width: 600px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #475569;
+  word-break: break-word;
+}
+
+.selected-file strong {
+  color: #17233a;
+}
+
+
+/* ==============================
+   UPLOAD BUTTON
+============================== */
+
+.upload-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* ==============================
+   INFORMATION BOX
+============================== */
+
+.upload-info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px 20px;
+  margin-bottom: 30px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  color: #1e40af;
+}
+
+.upload-info-box > span {
+  font-size: 20px;
+}
+
+.upload-info-box strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.upload-info-box p {
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+  .upload-question-page {
+    width: 100%;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .upload-box {
+    padding: 35px 20px;
+  }
+
+  .selected-file {
+    flex-direction: column;
+  }
+}

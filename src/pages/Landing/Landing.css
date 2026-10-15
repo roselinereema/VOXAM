@@ -1,0 +1,519 @@
+/* =========================
+   GENERAL
+========================= */
+
+.landing-page {
+    min-height: 100vh;
+    background: #f8faff;
+    color: #172554;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.landing-header {
+    height: 78px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.landing-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.logo-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+}
+
+
+.landing-logo h1 {
+    margin: 0;
+
+    font-size: 21px;
+
+    color: #172554;
+}
+
+
+.landing-logo p {
+    margin: 3px 0 0;
+
+    font-size: 11px;
+
+    color: #64748b;
+}
+
+
+/* NAVIGATION */
+
+.landing-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+.landing-nav button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    color: #475569;
+}
+
+
+.landing-nav button:hover {
+    color: #2563eb;
+}
+
+
+.login-nav-button {
+    padding: 10px 22px !important;
+
+    border-radius: 7px !important;
+
+    background: #2563eb !important;
+
+    color: white !important;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 530px;
+
+    padding: 65px 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #eff6ff,
+            #ffffff
+        );
+}
+
+
+.hero-text {
+    max-width: 580px;
+}
+
+
+.hero-tag {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+.hero-text h2 {
+    margin: 22px 0 18px;
+
+    font-size: 48px;
+
+    line-height: 1.12;
+
+    color: #172554;
+}
+
+
+.hero-text p {
+    max-width: 560px;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.primary-button,
+.secondary-button {
+    padding: 13px 28px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.primary-button {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+
+.secondary-button {
+    border: 1px solid #2563eb;
+
+    background: white;
+
+    color: #2563eb;
+}
+
+
+.secondary-button:hover {
+    background: #eff6ff;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+    width: 430px;
+    height: 390px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.main-circle {
+    width: 270px;
+    height: 270px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+
+    font-size: 95px;
+
+    box-shadow:
+        0 20px 50px rgba(37, 99, 235, 0.15);
+}
+
+
+.floating-card {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 13px 18px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.12);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+.card-top {
+    top: 35px;
+
+    left: 0;
+}
+
+
+.card-right {
+    top: 155px;
+
+    right: -10px;
+}
+
+
+.card-bottom {
+    bottom: 30px;
+
+    left: 45px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 65px 8%;
+
+    background: white;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading h2 {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+    color: #172554;
+}
+
+
+.section-heading p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.feature-card {
+    padding: 28px 22px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+
+.feature-card h3 {
+    margin: 10px 0;
+
+    font-size: 16px;
+}
+
+
+.feature-card p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.landing-footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #172554;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+.landing-footer p {
+    margin: 5px 0 0;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 55px 6%;
+    }
+
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+
+    .hero-text p {
+        margin: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .landing-header {
+        padding: 0 20px;
+    }
+
+
+    .landing-nav {
+        gap: 8px;
+    }
+
+
+    .landing-nav button:not(.login-nav-button) {
+        display: none;
+    }
+
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+
+    .hero-visual {
+        width: 100%;
+
+        transform: scale(0.8);
+    }
+
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
